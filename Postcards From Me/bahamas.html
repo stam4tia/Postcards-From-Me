@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nassau, Bahamas</title>
+    <link rel="stylesheet" href="pagestyles.css">
+    <script defer src="script.js"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="home.html">
+            <img src="header.png" alt="Postcards From Me">
+        </a>
+    </header>
+
+    <main class="container">
+        <div class="top-row">
+            <img src="bahamas.png" alt="Christmas in New York" class="main-image">
+            <img src="bahamas_alt.png" alt="Alternative Christmas Image" class="alt-image">
+        </div>
+
+        <div class="bottom-row">
+            <div class="content-box slideshow">
+                <h2 class="slideshow-title">Experience the Paradise of the Bahamas</h2>
+                <div class="slideshow-container">
+                    <div class="slide">
+                        <img src="Nassau Harbour Lighthouse.png" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="Atlantis Bahamas.png" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="Cabbage Beach.png" alt="Image 3">
+                    </div>
+                 
+                </div>
+                <!-- navigation Arrows -->
+                <div class="arrow prev" onclick="changeSlide(-1)">&#10094;</div>
+                <div class="arrow next" onclick="changeSlide(1)">&#10095;</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/stam4tia" target="_blank" rel="noopener noreferrer" class="footer-link">
+                &copy; 2025 Stamatia D
+            </a>
+        </p>
+    </footer>
+</body>
+</html>

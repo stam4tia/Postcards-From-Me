@@ -1,0 +1,148 @@
+body {
+    font-family:  "Kiwi Maru", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f0dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.kiwi-maru-regular {
+    font-family: "Kiwi Maru", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .postcard-description {
+    text-align: center;
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;  
+    margin-bottom: 0;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 160px 0px;  
+}
+.image-column {
+    flex: 1;
+    max-width: 350px;
+    text-align: center;
+}
+
+.flip-container {
+    position: relative;
+    width: 100%;
+}
+
+.flip-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.flip-container .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* hidden by default */
+}
+
+.flip-container:hover .front {
+    opacity: 0; /* hide front image on hover */
+}
+
+.flip-container:hover .back {
+    opacity: 1; /* show back image on hover */
+}
+
+
+  
+footer {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-link:hover {
+    color: blue;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    header {
+        padding: 10px;
+        max-width: 100%;
+        text-align: center; 
+    }
+
+    header img {
+        width: 100%; 
+        height: auto;
+        display: block; 
+        margin: 0 auto; 
+    }
+
+    .image-row {
+        flex-direction: column;
+        gap: 10px; 
+        padding: 40px 0px; 
+        align-items: center; 
+    }
+
+    .image-column {
+        max-width: 100%; 
+        display: flex;
+        justify-content: center; 
+    }
+
+    .flip-container {
+        width: 90%; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .postcard-description {
+        font-size: 16px; 
+        text-align: center; 
+    }
+
+    footer {
+        padding: 8px;
+        text-align: center; 
+    }
+}
